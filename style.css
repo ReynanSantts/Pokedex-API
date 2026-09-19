@@ -41,16 +41,24 @@ body {
   padding: 30px;
 }
 
-h2 {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 20px;
+.logo-container {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-pokemon {
+    width: 500px;
+    max-width: 80%;
+    height: auto;
 }
 
 .pesquisa {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-top: 110px;
 }
 
 #search-bar {
@@ -82,7 +90,7 @@ h2 {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding-top: 30px;
-  margin-top: 400px;
+  margin-top: 80px;
 }
 
 .pokemon {
@@ -133,6 +141,10 @@ h2 {
   position: relative;
   max-height: 90vh;
   overflow-y: auto;
+}
+
+.popup-conteudo::-webkit-scrollbar{
+  display: none;
 }
 
 #detalhesPokemon img {

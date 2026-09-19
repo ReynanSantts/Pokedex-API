@@ -1,40 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokédex</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main class="container">
+      <div class="centro-pokebola"></div>
 
-        <div class="centro-pokebola"></div>
+      <div class="logo-container">
+        <img src="Image-logo-pokemon.png" class="logo-pokemon" alt="Pokémon" />
+      </div>
 
-        <h2>Pokédex</h2>
+      <div class="pesquisa">
+        <input type="search" id="search-bar" placeholder="Pesquisar Pokémon" />
+        <button id="btnPesquisar">Pesquisar</button>
+      </div>
 
-        <div class="pesquisa">
-            <input type="search" id="search-bar" placeholder="Pesquisar Pokémon">
-            <button id="btnPesquisar">Pesquisar</button>
-        </div>
-
-        <section class="pokemons" id="pokemons">
-
-        </section>
-
+      <section class="pokemons" id="pokemons"></section>
     </main>
 
     <div class="popup" id="popup">
-        <div class="popup-conteudo">
-            <button id="fecharPopup">X</button>
+      <div class="popup-conteudo">
+        <button id="fecharPopup">X</button>
 
-            <div id="detalhesPokemon">
-                
-            </div>
-        </div>
+        <div id="detalhesPokemon"></div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

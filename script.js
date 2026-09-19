@@ -48,7 +48,7 @@ async function exibirPokemons(lista) {
 
     card.innerHTML = `
       <img 
-        src="${detalhes.sprites.front_default}" 
+        src="${detalhes.sprites.other["official-artwork"].front_default}"  
         alt="${pokemon.name}"
       >
 
@@ -84,7 +84,9 @@ async function exibirPokemons(lista) {
       detalhesPokemon.innerHTML = `
     <h2>${pokemon.name}</h2>
 
-    <img src="${detalhes.sprites.front_default}" alt="${pokemon.name}">
+    <img
+     src="${detalhes.sprites.other["official-artwork"].front_default}"  
+     alt="${pokemon.name}">
 
     <p><strong>Nº:</strong> #${detalhes.id}</p>
     <p><strong>Tipo:</strong> ${tiposTexto}</p>
