@@ -60,7 +60,7 @@ h2 {
   border-radius: 5px;
 }
 #search-bar::-webkit-search-cancel-button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #btnPesquisar {
@@ -131,6 +131,8 @@ h2 {
   width: 350px;
   text-align: center;
   position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 #detalhesPokemon img {
@@ -170,71 +172,69 @@ h2 {
 }
 
 .status {
-    margin: 12px 0;
-    text-align: left;
+  margin: 12px 0;
+  text-align: left;
 }
 
 .status-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .barra {
-    width: 100%;
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 10px;
-    overflow: hidden;
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .barra-preenchida {
-    height: 100%;
-    background-color: #e53935;
-    border-radius: 10px;
+  height: 100%;
+  background-color: #e53935;
+  border-radius: 10px;
 }
 
 /*Tablets*/
-@media (max-width: 767px){
-    .pokemons{
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media (max-width: 767px) {
+  .pokemons {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* CELULAR */
 @media (max-width: 500px) {
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-    .pokemons {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-    }
+  .pokemons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
 
-    .pokemon {
-        width: 100%;
-        min-width: 0;
-        padding: 10px;
-    }
-        .popup-conteudo {
-        width: 90%;
-        max-height: 90vh;
-        padding: 20px;
-        overflow-y: auto;
-    }
+  .pokemon {
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+  }
+  .popup-conteudo {
+    width: 90%;
+    padding: 20px;
+  }
 
-    #detalhesPokemon img {
-        width: 120px;
-    }
+  #detalhesPokemon img {
+    width: 120px;
+  }
 
-    #detalhesPokemon p {
-        margin: 7px 0;
-        font-size: 15px;
-    }
+  #detalhesPokemon p {
+    margin: 7px 0;
+    font-size: 15px;
+  }
 
-    .status {
-        margin: 8px 0;
-    }
+  .status {
+    margin: 8px 0;
+  }
 }
