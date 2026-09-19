@@ -218,4 +218,23 @@ h2 {
         min-width: 0;
         padding: 10px;
     }
+        .popup-conteudo {
+        width: 90%;
+        max-height: 90vh;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    #detalhesPokemon img {
+        width: 120px;
+    }
+
+    #detalhesPokemon p {
+        margin: 7px 0;
+        font-size: 15px;
+    }
+
+    .status {
+        margin: 8px 0;
+    }
 }
