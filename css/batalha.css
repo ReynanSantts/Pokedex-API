@@ -244,3 +244,96 @@
 #placarNomeJ2 {
   font-weight: bold;
 }
+
+@media (max-width: 600px) {
+  .modalResultadoBatalha {
+    padding: 15px;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+
+  .resultadoBatalha {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 12px;
+    margin: 15px 0;
+    border-width: 4px;
+    border-radius: 18px;
+  }
+
+  .resultadoBatalha h1 {
+    font-size: 21px;
+    margin-bottom: 15px;
+    padding: 0 30px;
+  }
+
+  .placarBatalha {
+    gap: 8px;
+    padding: 8px 5px;
+    margin: 0 0 10px;
+    font-size: 16px;
+    flex-wrap: wrap;
+  }
+
+  .placarBatalha strong {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .arena {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .jogadorBatalha {
+    width: 100%;
+    max-width: 260px;
+    padding: 12px;
+  }
+
+  .jogadorBatalha h2 {
+    font-size: 19px;
+    margin-bottom: 5px;
+  }
+
+  .jogadorBatalha h3 {
+    font-size: 18px;
+    margin: 4px 0;
+  }
+
+  .jogadorBatalha img {
+    width: 110px;
+    height: 110px;
+  }
+
+  .jogadorBatalha p {
+    font-size: 16px;
+  }
+
+  .jogadorBatalha strong {
+    font-size: 17px;
+  }
+
+  .vs {
+    font-size: 28px;
+  }
+
+  #vencedorBatalha {
+    font-size: 21px;
+    margin: 12px 0;
+  }
+
+  #novaBatalha {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+
+  #fecharBatalha {
+    width: 32px;
+    height: 32px;
+    top: 8px;
+    right: 8px;
+  }
+}
