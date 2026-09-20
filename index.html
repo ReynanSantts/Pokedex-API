@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokédex</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <main class="container">
       <div class="centro-pokebola"></div>
@@ -17,6 +18,69 @@
       <div class="pesquisa">
         <input type="search" id="search-bar" placeholder="Pesquisar Pokémon" />
         <button id="btnPesquisar">Pesquisar</button>
+      </div>
+      <button id="btnBatalha">Batalha ⚔️</button>
+
+      <div class="modalBatalha" id="modalBatalha">
+        <div class="cadastroBatalha">
+          <h2 id="tituloCadastro">Jogador</h2>
+          <input
+            type="text"
+            id="campo"
+            placeholder="Digite o nome de guerra ⚔️"
+          />
+          <button id="selecionarCartas">Selecionar Cartas</button>
+          <button id="btnConfirmab">Confirmar</button>
+        </div>
+      </div>
+
+      <div id="avisoSelecao" class="avisoSelecao">
+        <h2 id="tituloSelecao">⚔️ Escolha seu Pokémon</h2>
+        <p id="mensagemSelecao"></p>
+      </div>
+
+      <div class="modalResultadoBatalha" id="modalResultadoBatalha">
+        <div class="resultadoBatalha">
+          <button id="fecharBatalha">X</button>
+          <h1>⚔️ BATALHA POKÉMON ⚔️</h1>
+
+          <div class="placarBatalha">
+            <span id="placarNomeJ1"></span>
+            <strong id="placarPontosJ1">0</strong>
+
+            <span class="placarX">X</span>
+
+            <strong id="placarPontosJ2">0</strong>
+            <span id="placarNomeJ2"></span>
+          </div>
+
+          <div class="arena">
+            <div class="jogadorBatalha">
+              <h2 id="nomeBatalhaJ1"></h2>
+              <img id="imagemBatalhaJ1" src="" alt="Pokémon Jogador 1" />
+              <h3 id="pokemonBatalhaJ1"></h3>
+              <p>
+                Poder:
+                <strong id="poderBatalhaJ1"></strong>
+              </p>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="jogadorBatalha">
+              <h2 id="nomeBatalhaJ2"></h2>
+              <img id="imagemBatalhaJ2" src="" alt="Pokémon Jogador 2" />
+              <h3 id="pokemonBatalhaJ2"></h3>
+              <p>
+                Poder:
+                <strong id="poderBatalhaJ2"></strong>
+              </p>
+            </div>
+          </div>
+
+          <h2 id="vencedorBatalha"></h2>
+          <button id="novaBatalha">🔄 Nova Batalha</button>
+        </div>
       </div>
 
       <section class="pokemons" id="pokemons"></section>
@@ -30,6 +94,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="Js/main.js"></script>
   </body>
 </html>

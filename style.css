@@ -148,15 +148,15 @@ body {
     0 15px 35px rgba(0, 0, 0, 0.6),
     inset 0 0 12px rgba(255, 255, 255, 0.7);
   animation: abrirCarta 0.3s ease;
-   transition: 0.3s;
+  transition: 0.3s;
 }
 
 .popup-conteudo:hover {
-    transform: translateY(-10px) rotate(1deg);
+  transform: translateY(-10px) rotate(1deg);
 
-    box-shadow:
-        0 20px 35px rgba(0, 0, 0, 0.6),
-        inset 0 0 12px rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 20px 35px rgba(0, 0, 0, 0.6),
+    inset 0 0 12px rgba(255, 255, 255, 0.7);
 }
 
 /* CORES DAS CARTAS POR TIPO */
@@ -276,7 +276,7 @@ body {
 }
 
 #detalhesPokemon img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #detalhesPokemon p {
@@ -344,6 +344,253 @@ body {
   height: 100%;
   background-color: #e53935;
   border-radius: 10px;
+}
+
+#btnBatalha {
+  background-color: rgb(1, 2, 63);
+  color: rgb(242, 255, 60);
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 25px;
+}
+
+.modalBatalha {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.cadastroBatalha {
+  width: 420px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, #ffffff, #eeeeee);
+  border: 5px solid #111;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  animation: abrirCarta 0.3s ease;
+}
+
+.cadastroBatalha h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+#campo {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #111;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+#campo:focus {
+  border-color: #e53935;
+}
+
+#selecionarCartas {
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#btnConfirmab {
+  width: 100%;
+  background-color: #1b5e20;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btnConfirmab:hover {
+  background-color: #124116;
+  transform: scale(1.03);
+}
+
+.avisoSelecao {
+  display: none;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#tituloSelecao {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+#mensagemSelecao {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* RESULTADO DA BATALHA */
+
+.modalResultadoBatalha {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.resultadoBatalha {
+  position: relative;
+  width: 750px;
+  max-width: 90%;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff, #eeeeee);
+  border: 5px solid #111;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  animation: abrirCarta 0.3s ease;
+}
+
+.resultadoBatalha h1 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.arena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin: 20px 0;
+}
+
+.jogadorBatalha {
+  width: 240px;
+  padding: 20px;
+  background-color: white;
+  border: 3px solid #111;
+  border-radius: 18px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.jogadorBatalha h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.jogadorBatalha h3 {
+  font-size: 21px;
+  text-transform: capitalize;
+  margin: 8px 0;
+}
+
+.jogadorBatalha img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  object-fit: contain;
+}
+
+.jogadorBatalha p {
+  font-size: 18px;
+}
+
+.jogadorBatalha strong {
+  font-size: 20px;
+}
+
+.vs {
+  font-size: 42px;
+  font-weight: bold;
+  color: #e53935;
+  text-shadow: 2px 2px 0 #111;
+}
+
+#vencedorBatalha {
+  margin: 20px 0;
+  font-size: 27px;
+}
+
+#fecharBatalha {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  background-color: #e53935;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#novaBatalha {
+  padding: 12px 25px;
+  background-color: #1b5e20;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#novaBatalha:hover {
+  background-color: #124116;
+  transform: scale(1.05);
+}
+
+.placarBatalha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: -10px 0 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.placarBatalha strong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: #111;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.placarX {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+#placarNomeJ1,
+#placarNomeJ2 {
+  font-weight: bold;
 }
 
 @keyframes abrirCarta {
