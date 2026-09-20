@@ -66,12 +66,21 @@ async function exibirPokemons(lista) {
 
       const tiposTexto = tipos.join(", ");
 
+      // Pegando o primeiro tipo
+      const tipoPrincipal = tipos[0]
+
       // Habilidades
       const habilidades = detalhes.abilities.map((habilidade) => {
         return habilidade.ability.name;
       });
 
       const habilidadesTexto = habilidades.join(", ");
+
+      const popupConteudo = document.querySelector(".popup-conteudo");
+
+      popupConteudo.className = "popup-conteudo";
+
+      popupConteudo.classList.add(tipoPrincipal);
 
       const hp = detalhes.stats[0].base_stat;
       const ataque = detalhes.stats[1].base_stat;
@@ -177,8 +186,8 @@ popup.addEventListener("click", (event) => {
 });
 
 // FUNÇÃO PARA CALCULAR PORCENTAGEM DA BARRA SEM ULTRAPASSAR 100%
-function calcularBarra(valor){
-    return Math.min((valor / 300)*100,100)
+function calcularBarra(valor) {
+  return Math.min((valor / 300) * 100, 100);
 }
 
 // PESQUISAR POKÉMON
